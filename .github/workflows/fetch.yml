@@ -1,0 +1,33 @@
+name: Fetch articles
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run fetch
+        env:
+          QIITA_USER_ID: ${{ vars.QIITA_USER_ID }}
+          ZENN_USER_ID: ${{ vars.ZENN_USER_ID }}
+          BLOG_FEED_URL: ${{ vars.BLOG_FEED_URL }}
+      - name: Commit generated data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/articles.json public/sources.json
+          git diff --cached --quiet || git commit -m "Update articles data"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:${GITHUB_REF_NAME}
