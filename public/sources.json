@@ -1,4 +1,26 @@
 {
-  "generatedAt": "1970-01-01T00:00:00.000Z",
-  "items": []
+  "generatedAt": "2026-05-08T21:59:45.570Z",
+  "items": [
+    {
+      "id": "blog",
+      "label": "Blog",
+      "enabled": true,
+      "lastFetchedAt": "2026-05-08T21:59:45.570Z",
+      "itemCount": 11
+    },
+    {
+      "id": "qiita",
+      "label": "Qiita",
+      "enabled": true,
+      "lastFetchedAt": "2026-05-08T21:59:45.570Z",
+      "itemCount": 100
+    },
+    {
+      "id": "zenn",
+      "label": "Zenn",
+      "enabled": true,
+      "lastFetchedAt": "2026-05-08T21:59:45.570Z",
+      "itemCount": 8
+    }
+  ]
 }
