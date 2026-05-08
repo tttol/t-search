@@ -21,6 +21,7 @@ const state = {
     source: "",
     limit: DEFAULT_LIMIT
   } satisfies SearchOptions,
+  isComposing: false,
   selectedArticle: undefined as Article | undefined
 };
 
@@ -262,7 +263,20 @@ const createSearchForm = (options: SearchOptions): HTMLFormElement => {
 
   form.append(keywordLabel, sourceLabelElement, limitLabel);
 
-  form.addEventListener("input", render);
+  keyword.addEventListener("compositionstart", () => {
+    state.isComposing = true;
+  });
+
+  keyword.addEventListener("compositionend", () => {
+    state.isComposing = false;
+    render();
+  });
+
+  form.addEventListener("input", () => {
+    if (!state.isComposing) {
+      render();
+    }
+  });
 
   return form;
 };
