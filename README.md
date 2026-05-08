@@ -1,4 +1,4 @@
-# T Search
+# t-search
 Static GitHub Pages app for searching article titles from Qiita, Zenn, and a blog.
 ## Commands
 ```sh
