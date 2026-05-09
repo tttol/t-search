@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-05-08T21:59:45.570Z",
+  "generatedAt": "2026-05-08T22:19:55.947Z",
   "items": [
     {
       "id": "blog",
       "label": "Blog",
       "enabled": true,
-      "lastFetchedAt": "2026-05-08T21:59:45.570Z",
+      "lastFetchedAt": "2026-05-08T22:19:55.947Z",
       "itemCount": 11
     },
     {
       "id": "qiita",
       "label": "Qiita",
       "enabled": true,
-      "lastFetchedAt": "2026-05-08T21:59:45.570Z",
-      "itemCount": 100
+      "lastFetchedAt": "2026-05-08T22:19:55.947Z",
+      "itemCount": 110
     },
     {
       "id": "zenn",
       "label": "Zenn",
       "enabled": true,
-      "lastFetchedAt": "2026-05-08T21:59:45.570Z",
+      "lastFetchedAt": "2026-05-08T22:19:55.947Z",
       "itemCount": 8
     }
   ]

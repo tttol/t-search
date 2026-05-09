@@ -20,6 +20,10 @@ const sourceLabels: Readonly<Record<string, string>> = {
   blog: "Blog"
 };
 
+const qiitaPerPage = 100;
+
+const qiitaMaxPage = 100;
+
 // RSS and Atom parsers return arrays only when multiple elements are present.
 const asArray = <T>(value: T | readonly T[] | undefined): readonly T[] => {
   if (value === undefined) {
@@ -160,14 +164,37 @@ export const createDocuments = (
   };
 };
 
-export const fetchQiita = async (userId: string, generatedAt: string): Promise<FetchResult> => {
-  const response = await fetch(`https://qiita.com/api/v2/users/${encodeURIComponent(userId)}/items?page=1&per_page=100`);
+const fetchQiitaItemsPage = async (
+  userId: string,
+  page: number
+): Promise<readonly FeedEntry[]> => {
+  const response = await fetch(`https://qiita.com/api/v2/users/${encodeURIComponent(userId)}/items?page=${page}&per_page=${qiitaPerPage}`);
 
   if (!response.ok) {
     throw new Error(`Qiita fetch failed: ${response.status}`);
   }
 
-  const items = await response.json() as readonly FeedEntry[];
+  return await response.json() as readonly FeedEntry[];
+};
+
+const fetchAllQiitaItems = async (
+  userId: string,
+  page = 1
+): Promise<readonly FeedEntry[]> => {
+  const items = await fetchQiitaItemsPage(userId, page);
+  const isLastPage = items.length < qiitaPerPage || page >= qiitaMaxPage;
+
+  if (isLastPage) {
+    return items;
+  }
+
+  const nextItems = await fetchAllQiitaItems(userId, page + 1);
+
+  return [...items, ...nextItems];
+};
+
+export const fetchQiita = async (userId: string, generatedAt: string): Promise<FetchResult> => {
+  const items = await fetchAllQiitaItems(userId);
   const articles = normalizeQiitaItems(items);
 
   return {

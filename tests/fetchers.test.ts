@@ -1,5 +1,18 @@
-import { describe, expect, test } from "vitest";
-import { createDocuments, normalizeFeed, normalizeQiitaItems } from "../src/fetchers";
+import { afterEach, describe, expect, test, vi } from "vitest";
+import { createDocuments, fetchQiita, normalizeFeed, normalizeQiitaItems } from "../src/fetchers";
+
+const createQiitaItem = (id: string): Record<string, unknown> => ({
+  id,
+  title: `Qiita title ${id}`,
+  url: `https://qiita.com/example/items/${id}`,
+  created_at: "2026-05-01T00:00:00+09:00",
+  updated_at: "2026-05-02T00:00:00+09:00",
+  tags: [{ name: "rust" }]
+});
+
+afterEach(() => {
+  vi.unstubAllGlobals();
+});
 
 describe("normalizeQiitaItems", () => {
   test("Normalizes Qiita response", () => {
@@ -32,6 +45,40 @@ describe("normalizeQiitaItems", () => {
 
     // THEN
     expect(actual).toEqual(expected);
+  });
+});
+
+describe("fetchQiita", () => {
+  test("Fetches all Qiita pages until the last page", async () => {
+    // GIVEN
+    const firstPageItems = Array.from({ length: 100 }, (_, index) => createQiitaItem(`page-1-${index}`));
+    const secondPageItems = [createQiitaItem("page-2-0")];
+    const pages: Readonly<Record<string, readonly Record<string, unknown>[]>> = {
+      "1": firstPageItems,
+      "2": secondPageItems
+    };
+    const fetchMock = vi.fn(async (url: string | URL | Request) => {
+      const page = new URL(String(url)).searchParams.get("page") ?? "";
+      return new Response(JSON.stringify(pages[page] ?? []));
+    });
+    const expected = {
+      source: {
+        id: "qiita",
+        label: "Qiita",
+        enabled: true,
+        lastFetchedAt: "2026-05-05T00:00:00.000Z",
+        itemCount: 101
+      },
+      articles: normalizeQiitaItems([...firstPageItems, ...secondPageItems])
+    };
+    vi.stubGlobal("fetch", fetchMock);
+
+    // WHEN
+    const actual = await fetchQiita("example", "2026-05-05T00:00:00.000Z");
+
+    // THEN
+    expect(actual).toEqual(expected);
+    expect(fetchMock).toHaveBeenCalledTimes(2);
   });
 });
 

@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
-import { findArticle, searchArticles } from "../src/search";
-import type { Article } from "../src/types";
+import { findArticle, normalizeLimit, searchArticles } from "../src/search";
+import type { Article, LimitOption } from "../src/types";
 
 const articles: readonly Article[] = [
   {
@@ -55,6 +55,24 @@ describe("searchArticles", () => {
 
     // THEN
     expect(actual).toEqual(expected);
+  });
+});
+
+describe("normalizeLimit", () => {
+  test.each([
+    ["50", 50],
+    ["100", 100],
+    ["all", "all"],
+    ["invalid", "all"]
+  ] as const)("Normalizes %s", (value, expected: LimitOption) => {
+    // GIVEN
+    const input = value;
+
+    // WHEN
+    const actual = normalizeLimit(input);
+
+    // THEN
+    expect(actual).toBe(expected);
   });
 });
 

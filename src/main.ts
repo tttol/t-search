@@ -1,5 +1,5 @@
 import "./styles.css";
-import { DEFAULT_LIMIT, findArticle, normalizeLimit, searchArticles } from "./search";
+import { DEFAULT_LIMIT, normalizeLimit, searchArticles } from "./search";
 import type { Article, ArticlesDocument, SearchOptions, SourcesDocument } from "./types";
 
 const app = document.querySelector<HTMLDivElement>("#app");
@@ -13,6 +13,12 @@ const sourceOptions = [
 
 const limitOptions = [50, 100, "all"] as const;
 
+const sourceIcons: Readonly<Record<string, string>> = {
+  qiita: "./images/qiita-icon.png",
+  zenn: "./images/logo-only.svg",
+  blog: "./images/blog.jpg"
+};
+
 const state = {
   articles: [] as readonly Article[],
   sources: [] as SourcesDocument["items"],
@@ -21,8 +27,7 @@ const state = {
     source: "",
     limit: DEFAULT_LIMIT
   } satisfies SearchOptions,
-  isComposing: false,
-  selectedArticle: undefined as Article | undefined
+  isComposing: false
 };
 
 const loadJson = async <T>(path: string): Promise<T> => {
@@ -64,8 +69,8 @@ const getFocusedField = (): {
 
   return {
     name: element.name,
-    selectionStart: element instanceof HTMLInputElement ? element.selectionStart : null,
-    selectionEnd: element instanceof HTMLInputElement ? element.selectionEnd : null
+    selectionStart: element instanceof HTMLInputElement && element.type === "search" ? element.selectionStart : null,
+    selectionEnd: element instanceof HTMLInputElement && element.type === "search" ? element.selectionEnd : null
   };
 };
 
@@ -118,6 +123,27 @@ const sourceLabel = (source: string): string => {
   return fixedSource ?? state.sources.find((item) => item.id === source)?.label ?? source;
 };
 
+const createSourceBadge = (source: string): HTMLSpanElement => {
+  const badge = createElement("span", "source-badge");
+
+  const iconPath = sourceIcons[source];
+
+  if (iconPath !== undefined) {
+    const icon = createElement("img", "source-icon");
+
+    icon.src = iconPath;
+    icon.alt = "";
+    icon.loading = "lazy";
+    icon.decoding = "async";
+
+    badge.append(icon);
+  }
+
+  badge.append(createElement("span", undefined, sourceLabel(source)));
+
+  return badge;
+};
+
 const safeHttpsUrl = (value: string): string | undefined => {
   try {
     const url = new URL(value);
@@ -129,22 +155,6 @@ const safeHttpsUrl = (value: string): string | undefined => {
   }
 };
 
-const createExternalLink = (url: string, label: string, className?: string): HTMLElement => {
-  const safeUrl = safeHttpsUrl(url);
-
-  if (safeUrl === undefined) {
-    return createElement("span", className, "無効なURL");
-  }
-
-  const link = createElement("a", className, label);
-
-  link.href = safeUrl;
-  link.target = "_blank";
-  link.rel = "noreferrer";
-
-  return link;
-};
-
 const createTagRow = (tags: readonly string[]): HTMLDivElement => {
   const row = createElement("div", "tag-row");
 
@@ -154,7 +164,9 @@ const createTagRow = (tags: readonly string[]): HTMLDivElement => {
 };
 
 const createArticleCard = (article: Article): HTMLElement => {
-  const card = createElement("article", "article-card");
+  const safeUrl = safeHttpsUrl(article.url);
+
+  const card = createElement(safeUrl === undefined ? "article" : "a", "article-card");
 
   const meta = createElement("div", "article-meta");
 
@@ -162,53 +174,19 @@ const createArticleCard = (article: Article): HTMLElement => {
 
   const title = createElement("h2", undefined, article.title);
 
-  const actions = createElement("div", "article-actions");
-
-  const detailButton = createElement("button", undefined, "詳細");
-
   publishedAt.dateTime = article.publishedAt;
 
-  meta.append(createElement("span", undefined, sourceLabel(article.source)), publishedAt);
+  meta.append(createSourceBadge(article.source), publishedAt);
 
-  detailButton.type = "button";
-  detailButton.dataset.detailSource = article.source;
-  detailButton.dataset.detailId = article.id;
-
-  actions.append(detailButton, createExternalLink(article.url, "開く"));
-
-  card.append(meta, title, createTagRow(article.tags), actions);
-
-  return card;
-};
-
-const createDetailDialog = (): HTMLDialogElement | undefined => {
-  if (state.selectedArticle === undefined) {
-    return undefined;
+  if (safeUrl !== undefined && card instanceof HTMLAnchorElement) {
+    card.href = safeUrl;
+    card.target = "_blank";
+    card.rel = "noreferrer";
   }
 
-  const article = state.selectedArticle;
+  card.append(meta, title, createTagRow(article.tags));
 
-  const dialog = createElement("dialog", "detail-dialog");
-
-  const head = createElement("div", "dialog-head");
-
-  const closeButton = createElement("button", undefined, "×");
-
-  const title = createElement("h2", undefined, article.title);
-
-  const url = createElement("p", "detail-url", article.url);
-
-  closeButton.type = "button";
-  closeButton.dataset.closeDetail = "true";
-  closeButton.ariaLabel = "閉じる";
-
-  dialog.open = true;
-
-  head.append(createElement("p", undefined, `${sourceLabel(article.source)} / ${formatDate(article.publishedAt)}`), closeButton);
-
-  dialog.append(head, title, url, createTagRow(article.tags), createExternalLink(article.url, "記事を開く", "primary-link"));
-
-  return dialog;
+  return card;
 };
 
 const createSearchForm = (options: SearchOptions): HTMLFormElement => {
@@ -222,9 +200,9 @@ const createSearchForm = (options: SearchOptions): HTMLFormElement => {
 
   const source = createElement("select");
 
-  const limitLabel = createElement("label");
+  const limitFieldset = createElement("fieldset", "limit-fieldset");
 
-  const limit = createElement("select");
+  const limitLegend = createElement("legend", undefined, "Limit");
 
   form.id = "search-form";
 
@@ -235,8 +213,6 @@ const createSearchForm = (options: SearchOptions): HTMLFormElement => {
 
   source.name = "source";
 
-  limit.name = "limit";
-
   source.append(...sourceOptions.map((item) => {
     const option = createElement("option", undefined, item.label);
 
@@ -246,22 +222,26 @@ const createSearchForm = (options: SearchOptions): HTMLFormElement => {
     return option;
   }));
 
-  limit.append(...limitOptions.map((item) => {
-    const option = createElement("option", undefined, String(item));
+  limitFieldset.append(limitLegend, ...limitOptions.map((item) => {
+    const radioLabel = createElement("label", "radio-option");
 
-    option.value = String(item);
-    option.selected = options.limit === item;
+    const radio = createElement("input");
 
-    return option;
+    radio.name = "limit";
+    radio.type = "radio";
+    radio.value = String(item);
+    radio.checked = options.limit === item;
+
+    radioLabel.append(radio, createElement("span", undefined, String(item)));
+
+    return radioLabel;
   }));
 
   keywordLabel.append(createElement("span", undefined, "検索"), keyword);
 
   sourceLabelElement.append(createElement("span", undefined, "Source"), source);
 
-  limitLabel.append(createElement("span", undefined, "Limit"), limit);
-
-  form.append(keywordLabel, sourceLabelElement, limitLabel);
+  form.append(keywordLabel, sourceLabelElement, limitFieldset);
 
   keyword.addEventListener("compositionstart", () => {
     state.isComposing = true;
@@ -302,8 +282,6 @@ const render = (): void => {
 
   const grid = createElement("section", "article-grid");
 
-  const detail = createDetailDialog();
-
   header.append(createElement("h1", undefined, "T Search"), createElement("p", undefined, "Qiita、Zenn、Blogの記事タイトルを横断検索します。"));
 
   resultHead.append(createElement("p", undefined, `${articles.length}件を表示`));
@@ -312,23 +290,7 @@ const render = (): void => {
 
   main.append(header, createSearchForm(options), resultHead, grid);
 
-  if (detail !== undefined) {
-    main.append(detail);
-  }
-
   app.replaceChildren(main);
-
-  document.querySelectorAll<HTMLButtonElement>("[data-detail-source]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.selectedArticle = findArticle(state.articles, button.dataset.detailSource ?? "", button.dataset.detailId ?? "");
-      render();
-    });
-  });
-
-  document.querySelector("[data-close-detail]")?.addEventListener("click", () => {
-    state.selectedArticle = undefined;
-    render();
-  });
 
   restoreFocusedField(focusedField);
 };

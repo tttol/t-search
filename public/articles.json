@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T21:59:45.570Z",
+  "generatedAt": "2026-05-08T22:19:55.947Z",
   "items": [
     {
       "id": "https://zenn.dev/tttol/articles/2881b678ee005b",
@@ -1367,6 +1367,139 @@
         "CSS",
         "tips",
         "備忘録"
+      ]
+    },
+    {
+      "id": "adf732adf546a7a87bf5",
+      "source": "qiita",
+      "title": "javascriptのおかげで卒論でちょっと楽できた話",
+      "url": "https://qiita.com/tttol777/items/adf732adf546a7a87bf5",
+      "publishedAt": "2018-10-06T04:12:31.000Z",
+      "updatedAt": "2024-04-11T22:19:46.000Z",
+      "tags": [
+        "HTML",
+        "JavaScript",
+        "卒論",
+        "学生",
+        "大学生"
+      ]
+    },
+    {
+      "id": "c0fced5e1fde84ed09b0",
+      "source": "qiita",
+      "title": "UNIX系計算言語”bc”をちゃんと調べてみる",
+      "url": "https://qiita.com/tttol777/items/c0fced5e1fde84ed09b0",
+      "publishedAt": "2018-08-20T00:48:19.000Z",
+      "updatedAt": "2024-04-11T22:18:32.000Z",
+      "tags": [
+        "Mac",
+        "Terminal",
+        "UNIX",
+        "bc"
+      ]
+    },
+    {
+      "id": "b14ab34415a1ebd8a9c5",
+      "source": "qiita",
+      "title": "えっ、まだPostgreSQLでダブルクォーテーション使ってるの？",
+      "url": "https://qiita.com/tttol777/items/b14ab34415a1ebd8a9c5",
+      "publishedAt": "2018-08-08T22:08:04.000Z",
+      "updatedAt": "2021-04-13T23:09:44.000Z",
+      "tags": [
+        "SQL",
+        "PostgreSQL",
+        "DB",
+        "備忘録",
+        "新人プログラマ応援"
+      ]
+    },
+    {
+      "id": "d24e182ac405fbc8a280",
+      "source": "qiita",
+      "title": "フォースとともにあらんことを…ヨーダ記法について",
+      "url": "https://qiita.com/tttol777/items/d24e182ac405fbc8a280",
+      "publishedAt": "2018-08-05T06:39:37.000Z",
+      "updatedAt": "2021-02-26T07:28:19.000Z",
+      "tags": [
+        "tips",
+        "ポエム",
+        "新人プログラマ応援"
+      ]
+    },
+    {
+      "id": "754180f91a8c1554287d",
+      "source": "qiita",
+      "title": "【java】appendの中で\"+\"は使わない！",
+      "url": "https://qiita.com/tttol777/items/754180f91a8c1554287d",
+      "publishedAt": "2018-07-21T10:18:37.000Z",
+      "updatedAt": "2022-01-19T01:59:47.000Z",
+      "tags": [
+        "Java",
+        "備忘録"
+      ]
+    },
+    {
+      "id": "2455ee3a8bbbfb447abb",
+      "source": "qiita",
+      "title": "【String型 vs StringBuilder】文字列結合における処理速度の違い",
+      "url": "https://qiita.com/tttol777/items/2455ee3a8bbbfb447abb",
+      "publishedAt": "2018-07-19T14:39:47.000Z",
+      "updatedAt": "2022-01-19T01:59:28.000Z",
+      "tags": [
+        "Java",
+        "string",
+        "StringBuilder"
+      ]
+    },
+    {
+      "id": "3161026c84dc427afc16",
+      "source": "qiita",
+      "title": "バッファ回路の必要性",
+      "url": "https://qiita.com/tttol777/items/3161026c84dc427afc16",
+      "publishedAt": "2018-07-16T03:26:30.000Z",
+      "updatedAt": "2024-04-11T22:15:42.000Z",
+      "tags": [
+        "基本情報処理技術者試験"
+      ]
+    },
+    {
+      "id": "753ed12c44be73e54bf0",
+      "source": "qiita",
+      "title": "【FE】DBのトランザクション処理",
+      "url": "https://qiita.com/tttol777/items/753ed12c44be73e54bf0",
+      "publishedAt": "2017-12-10T08:52:05.000Z",
+      "updatedAt": "2018-04-28T10:41:31.000Z",
+      "tags": [
+        "DB",
+        "基本情報処理技術者試験",
+        "勉強メモ",
+        "トランザクション"
+      ]
+    },
+    {
+      "id": "91cbc52276910cdfb3a3",
+      "source": "qiita",
+      "title": "gitでコミットを取り消すコマンド",
+      "url": "https://qiita.com/tttol777/items/91cbc52276910cdfb3a3",
+      "publishedAt": "2017-11-10T04:41:44.000Z",
+      "updatedAt": "2018-08-23T09:48:49.000Z",
+      "tags": [
+        "Git",
+        "Bitbucket",
+        "備忘録"
+      ]
+    },
+    {
+      "id": "9e1357d4a27ba090335f",
+      "source": "qiita",
+      "title": "bitbucket公開鍵認証でパスフレーズの入力を省略する",
+      "url": "https://qiita.com/tttol777/items/9e1357d4a27ba090335f",
+      "publishedAt": "2017-11-06T07:15:43.000Z",
+      "updatedAt": "2017-11-07T03:53:14.000Z",
+      "tags": [
+        "Git",
+        "Bitbucket",
+        "ssh公開鍵認証"
       ]
     }
   ]

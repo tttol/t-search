@@ -1,10 +1,14 @@
 import type { Article, LimitOption, SearchOptions } from "./types";
 
-export const DEFAULT_LIMIT: LimitOption = 50;
+export const DEFAULT_LIMIT: LimitOption = "all";
 
 export const normalizeLimit = (value: FormDataEntryValue | number | string | null): LimitOption => {
   if (value === "all") {
     return "all";
+  }
+
+  if (String(value) === "50") {
+    return 50;
   }
 
   if (String(value) === "100") {
