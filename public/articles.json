@@ -1,20 +1,11 @@
 {
-  "generatedAt": "2026-05-08T22:19:55.947Z",
+  "generatedAt": "2026-05-09T06:44:20.970Z",
   "items": [
     {
       "id": "https://zenn.dev/tttol/articles/2881b678ee005b",
       "source": "zenn",
       "title": "Neovim 0.11 -> 0.12へアップデートする際の勘所とnvim-treesitterの扱い",
       "url": "https://zenn.dev/tttol/articles/2881b678ee005b",
-      "publishedAt": "2026-05-01T12:48:15.000Z",
-      "updatedAt": "2026-05-01T12:48:15.000Z",
-      "tags": []
-    },
-    {
-      "id": "https://zenn.dev/tttol/articles/1e6db4fce514c1",
-      "source": "zenn",
-      "title": "Nixを使って常に最新のCodexを利用できる環境を構築する",
-      "url": "https://zenn.dev/tttol/articles/1e6db4fce514c1",
       "publishedAt": "2026-05-01T12:48:15.000Z",
       "updatedAt": "2026-05-01T12:48:15.000Z",
       "tags": []
