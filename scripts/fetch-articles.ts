@@ -117,12 +117,10 @@ const runFetchTask = async (task: FetchTask): Promise<FetchOutcome> => {
   }
 };
 
-const generatedAt = new Date().toISOString();
-
 const tasks = [
-  optionalEnv("QIITA_USER_ID") === undefined ? undefined : { id: "qiita", run: () => fetchQiita(optionalEnv("QIITA_USER_ID") ?? "", generatedAt) },
-  optionalEnv("ZENN_USER_ID") === undefined ? undefined : { id: "zenn", run: () => fetchFeedSource("zenn", `https://zenn.dev/${encodeURIComponent(optionalEnv("ZENN_USER_ID") ?? "")}/feed?all=1`, generatedAt) },
-  optionalEnv("BLOG_FEED_URL") === undefined ? undefined : { id: "blog", run: () => fetchFeedSource("blog", optionalEnv("BLOG_FEED_URL") ?? "", generatedAt) }
+  optionalEnv("QIITA_USER_ID") === undefined ? undefined : { id: "qiita", run: () => fetchQiita(optionalEnv("QIITA_USER_ID") ?? "") },
+  optionalEnv("ZENN_USER_ID") === undefined ? undefined : { id: "zenn", run: () => fetchFeedSource("zenn", `https://zenn.dev/${encodeURIComponent(optionalEnv("ZENN_USER_ID") ?? "")}/feed?all=1`) },
+  optionalEnv("BLOG_FEED_URL") === undefined ? undefined : { id: "blog", run: () => fetchFeedSource("blog", optionalEnv("BLOG_FEED_URL") ?? "") }
 ].filter((task): task is FetchTask => task !== undefined);
 
 const outcomes = await Promise.all(tasks.map(runFetchTask));
@@ -172,7 +170,7 @@ const disabledResults = configuredIds
     articles: []
   }));
 
-const documents = createDocuments([...succeeded, ...disabledResults], generatedAt);
+const documents = createDocuments([...succeeded, ...disabledResults]);
 
 await writeJson(articlesPath, documents.articlesDocument);
 

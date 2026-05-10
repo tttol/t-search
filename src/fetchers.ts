@@ -94,13 +94,11 @@ const dedupeArticles = (articles: readonly Article[]): readonly Article[] => {
 const createSource = (
   id: string,
   itemCount: number,
-  generatedAt: string,
   enabled: boolean
 ): Source => ({
   id,
   label: sourceLabels[id] ?? id,
   enabled,
-  lastFetchedAt: enabled ? generatedAt : null,
   itemCount
 });
 
@@ -144,8 +142,7 @@ export const normalizeFeed = (xml: string, source: string): readonly Article[] =
 };
 
 export const createDocuments = (
-  results: readonly FetchResult[],
-  generatedAt: string
+  results: readonly FetchResult[]
 ): { readonly articlesDocument: ArticlesDocument; readonly sourcesDocument: SourcesDocument } => {
   const articles = dedupeArticles(results.flatMap((result) => [...result.articles]))
     .toSorted((a, b) => b.publishedAt.localeCompare(a.publishedAt));
@@ -154,11 +151,9 @@ export const createDocuments = (
 
   return {
     articlesDocument: {
-      generatedAt,
       items: articles
     },
     sourcesDocument: {
-      generatedAt,
       items: sources
     }
   };
@@ -193,20 +188,19 @@ const fetchAllQiitaItems = async (
   return [...items, ...nextItems];
 };
 
-export const fetchQiita = async (userId: string, generatedAt: string): Promise<FetchResult> => {
+export const fetchQiita = async (userId: string): Promise<FetchResult> => {
   const items = await fetchAllQiitaItems(userId);
   const articles = normalizeQiitaItems(items);
 
   return {
-    source: createSource("qiita", articles.length, generatedAt, true),
+    source: createSource("qiita", articles.length, true),
     articles
   };
 };
 
 export const fetchFeedSource = async (
   id: string,
-  url: string,
-  generatedAt: string
+  url: string
 ): Promise<FetchResult> => {
   const response = await fetch(url);
 
@@ -219,9 +213,9 @@ export const fetchFeedSource = async (
   const articles = normalizeFeed(xml, id);
 
   return {
-    source: createSource(id, articles.length, generatedAt, true),
+    source: createSource(id, articles.length, true),
     articles
   };
 };
 
-export const createDisabledSource = (id: string): Source => createSource(id, 0, new Date(0).toISOString(), false);
+export const createDisabledSource = (id: string): Source => createSource(id, 0, false);

@@ -10,7 +10,6 @@ export type Article = {
 };
 
 export type ArticlesDocument = {
-  readonly generatedAt: string;
   readonly items: readonly Article[];
 };
 
@@ -18,12 +17,10 @@ export type Source = {
   readonly id: string;
   readonly label: string;
   readonly enabled: boolean;
-  readonly lastFetchedAt: string | null;
   readonly itemCount: number;
 };
 
 export type SourcesDocument = {
-  readonly generatedAt: string;
   readonly items: readonly Source[];
 };
 

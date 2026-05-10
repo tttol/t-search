@@ -66,7 +66,6 @@ describe("fetchQiita", () => {
         id: "qiita",
         label: "Qiita",
         enabled: true,
-        lastFetchedAt: "2026-05-05T00:00:00.000Z",
         itemCount: 101
       },
       articles: normalizeQiitaItems([...firstPageItems, ...secondPageItems])
@@ -74,7 +73,7 @@ describe("fetchQiita", () => {
     vi.stubGlobal("fetch", fetchMock);
 
     // WHEN
-    const actual = await fetchQiita("example", "2026-05-05T00:00:00.000Z");
+    const actual = await fetchQiita("example");
 
     // THEN
     expect(actual).toEqual(expected);
@@ -152,12 +151,11 @@ describe("createDocuments", () => {
           id: "blog",
           label: "Blog",
           enabled: true,
-          lastFetchedAt: "2026-05-05T00:00:00.000Z",
           itemCount: 2
         },
         articles: [article, article]
       }
-    ], "2026-05-05T00:00:00.000Z").articlesDocument.items;
+    ]).articlesDocument.items;
 
     // THEN
     expect(actual).toEqual(expected);
