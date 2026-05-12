@@ -13,10 +13,42 @@ const sourceOptions = [
 
 const limitOptions = [50, 100, "all"] as const;
 
+type Theme = "light" | "dark";
+
+const themeStorageKey = "t-search-theme";
+
 const sourceIcons: Readonly<Record<string, string>> = {
   qiita: "./images/qiita-icon.png",
   zenn: "./images/logo-only.svg",
   blog: "./images/blog.jpg"
+};
+
+const readStoredTheme = (): Theme | undefined => {
+  try {
+    const storedTheme = localStorage.getItem(themeStorageKey);
+
+    return storedTheme === "light" || storedTheme === "dark" ? storedTheme : undefined;
+  } catch {
+    return undefined;
+  }
+};
+
+const writeStoredTheme = (theme: Theme): void => {
+  try {
+    localStorage.setItem(themeStorageKey, theme);
+  } catch {
+    return;
+  }
+};
+
+const readInitialTheme = (): Theme => {
+  const storedTheme = readStoredTheme();
+
+  if (storedTheme !== undefined) {
+    return storedTheme;
+  }
+
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 };
 
 const state = {
@@ -27,6 +59,7 @@ const state = {
     source: "",
     limit: DEFAULT_LIMIT
   } satisfies SearchOptions,
+  theme: readInitialTheme(),
   isComposing: false
 };
 
@@ -189,6 +222,28 @@ const createArticleCard = (article: Article): HTMLElement => {
   return card;
 };
 
+const applyTheme = (theme: Theme): void => {
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+};
+
+const createThemeToggle = (theme: Theme): HTMLButtonElement => {
+  const button = createElement("button", "theme-toggle", theme === "dark" ? "Light" : "Dark");
+
+  button.type = "button";
+  button.setAttribute("aria-pressed", String(theme === "dark"));
+  button.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+  button.addEventListener("click", () => {
+    const nextTheme = state.theme === "dark" ? "light" : "dark";
+
+    state.theme = nextTheme;
+    writeStoredTheme(nextTheme);
+    render();
+  });
+
+  return button;
+};
+
 const createSearchForm = (options: SearchOptions): HTMLFormElement => {
   const form = createElement("form", "search-panel");
 
@@ -278,11 +333,17 @@ const render = (): void => {
 
   const header = createElement("header", "app-header");
 
+  const headerText = createElement("div");
+
   const resultHead = createElement("section", "result-head");
 
   const grid = createElement("section", "article-grid");
 
-  header.append(createElement("h1", undefined, "T Search"), createElement("p", undefined, "Qiita、Zenn、Blogの記事タイトルを横断検索します。"));
+  applyTheme(state.theme);
+
+  headerText.append(createElement("h1", undefined, "T Search"), createElement("p", undefined, "Qiita、Zenn、Blogの記事タイトルを横断検索します。"));
+
+  header.append(headerText, createThemeToggle(state.theme));
 
   resultHead.append(createElement("p", undefined, `${articles.length}件を表示`));
 
@@ -304,9 +365,15 @@ const renderError = (error: unknown): void => {
 
   const header = createElement("header", "app-header");
 
+  const headerText = createElement("div");
+
   const errorBox = createElement("pre", "error-box", error instanceof Error ? error.message : String(error));
 
-  header.append(createElement("h1", undefined, "T Search"), createElement("p", undefined, "データの読み込みに失敗しました。"));
+  applyTheme(state.theme);
+
+  headerText.append(createElement("h1", undefined, "T Search"), createElement("p", undefined, "データの読み込みに失敗しました。"));
+
+  header.append(headerText, createThemeToggle(state.theme));
 
   main.append(header, errorBox);
 
