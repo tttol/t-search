@@ -82,6 +82,30 @@
       "tags": []
     },
     {
+      "id": "bb62751f749f955b2b33",
+      "source": "qiita",
+      "title": "ログイン中のAWSアカウントが持つIAMロールを一覧表示する方法",
+      "url": "https://qiita.com/tttol777/items/bb62751f749f955b2b33",
+      "publishedAt": "2026-01-10T21:58:32.000Z",
+      "updatedAt": "2026-01-10T21:58:32.000Z",
+      "tags": [
+        "AWS",
+        "CLI",
+        "IAM"
+      ]
+    },
+    {
+      "id": "3071f016a9530c3d5060",
+      "source": "qiita",
+      "title": "zshの起動時間を短縮する",
+      "url": "https://qiita.com/tttol777/items/3071f016a9530c3d5060",
+      "publishedAt": "2026-01-09T10:05:04.000Z",
+      "updatedAt": "2026-01-09T10:05:04.000Z",
+      "tags": [
+        "Zsh"
+      ]
+    },
+    {
       "id": "https://blog.about-tttol.link/blog/recap2025/",
       "source": "blog",
       "title": "2025年ふりかえり",
@@ -89,6 +113,321 @@
       "publishedAt": "2025-12-31T15:17:00.000Z",
       "updatedAt": "2025-12-31T15:17:00.000Z",
       "tags": []
+    },
+    {
+      "id": "7c56aaac7e13d99ae235",
+      "source": "qiita",
+      "title": "GitHub OIDCプロバイダーを使ってGHAからAWSリソースを操作する",
+      "url": "https://qiita.com/tttol777/items/7c56aaac7e13d99ae235",
+      "publishedAt": "2025-12-29T22:05:24.000Z",
+      "updatedAt": "2026-01-18T22:47:06.000Z",
+      "tags": [
+        "AWS",
+        "GHA"
+      ]
+    },
+    {
+      "id": "315239beae94867e0e02",
+      "source": "qiita",
+      "title": "ひとりアドベントカレンダーの振り返り",
+      "url": "https://qiita.com/tttol777/items/315239beae94867e0e02",
+      "publishedAt": "2025-12-25T01:19:21.000Z",
+      "updatedAt": "2025-12-25T01:19:21.000Z",
+      "tags": [
+        "ひとりアドベントカレンダー"
+      ]
+    },
+    {
+      "id": "7dd20512484123bce9d5",
+      "source": "qiita",
+      "title": "アウトプットは太い方がいい",
+      "url": "https://qiita.com/tttol777/items/7dd20512484123bce9d5",
+      "publishedAt": "2025-12-24T00:52:12.000Z",
+      "updatedAt": "2025-12-24T00:52:12.000Z",
+      "tags": [
+        "ポエム",
+        "アウトプット"
+      ]
+    },
+    {
+      "id": "be0f340b058e5153f58b",
+      "source": "qiita",
+      "title": "CodexのSkillsとは何で、AGENTS.mdやMCPとはどう違うのか",
+      "url": "https://qiita.com/tttol777/items/be0f340b058e5153f58b",
+      "publishedAt": "2025-12-22T20:39:37.000Z",
+      "updatedAt": "2025-12-28T22:52:03.000Z",
+      "tags": [
+        "SKILLS",
+        "codex",
+        "Claude"
+      ]
+    },
+    {
+      "id": "e37d55c380fc456f9e83",
+      "source": "qiita",
+      "title": "DBレコードは最終的にファイルに保存される",
+      "url": "https://qiita.com/tttol777/items/e37d55c380fc456f9e83",
+      "publishedAt": "2025-12-21T22:34:24.000Z",
+      "updatedAt": "2025-12-21T22:34:24.000Z",
+      "tags": [
+        "DB"
+      ]
+    },
+    {
+      "id": "94944f12a57323296c64",
+      "source": "qiita",
+      "title": "負荷試験を任された時に考えること",
+      "url": "https://qiita.com/tttol777/items/94944f12a57323296c64",
+      "publishedAt": "2025-12-20T22:07:23.000Z",
+      "updatedAt": "2025-12-20T22:07:23.000Z",
+      "tags": [
+        "負荷試験"
+      ]
+    },
+    {
+      "id": "f77ad79eda40896de67f",
+      "source": "qiita",
+      "title": "Outboxパターンとは",
+      "url": "https://qiita.com/tttol777/items/f77ad79eda40896de67f",
+      "publishedAt": "2025-12-19T20:31:03.000Z",
+      "updatedAt": "2025-12-19T20:31:03.000Z",
+      "tags": [
+        "分散システム"
+      ]
+    },
+    {
+      "id": "dc6175788c436655385a",
+      "source": "qiita",
+      "title": "Engineers with English",
+      "url": "https://qiita.com/tttol777/items/dc6175788c436655385a",
+      "publishedAt": "2025-12-18T19:57:17.000Z",
+      "updatedAt": "2025-12-18T19:57:17.000Z",
+      "tags": [
+        "英語"
+      ]
+    },
+    {
+      "id": "10a1bf4aabc56d5bb9dc",
+      "source": "qiita",
+      "title": "テストコードにおけるヘルパークラスの立ち位置",
+      "url": "https://qiita.com/tttol777/items/10a1bf4aabc56d5bb9dc",
+      "publishedAt": "2025-12-17T21:31:45.000Z",
+      "updatedAt": "2025-12-17T21:31:45.000Z",
+      "tags": [
+        "テストコード"
+      ]
+    },
+    {
+      "id": "e907e79e9dcf8ff93f2e",
+      "source": "qiita",
+      "title": "テストコードがないプロジェクトにテストを導入する",
+      "url": "https://qiita.com/tttol777/items/e907e79e9dcf8ff93f2e",
+      "publishedAt": "2025-12-17T09:07:24.000Z",
+      "updatedAt": "2025-12-17T09:07:24.000Z",
+      "tags": [
+        "テスト",
+        "テストコード"
+      ]
+    },
+    {
+      "id": "9d68dafbcbd5c4771079",
+      "source": "qiita",
+      "title": "AWS CloudShellは便利なのか？",
+      "url": "https://qiita.com/tttol777/items/9d68dafbcbd5c4771079",
+      "publishedAt": "2025-12-15T20:44:29.000Z",
+      "updatedAt": "2025-12-15T20:44:29.000Z",
+      "tags": [
+        "AWS"
+      ]
+    },
+    {
+      "id": "fa12c4a769e263a0c0be",
+      "source": "qiita",
+      "title": "AWSリソース消し忘れで高額請求されないための対策",
+      "url": "https://qiita.com/tttol777/items/fa12c4a769e263a0c0be",
+      "publishedAt": "2025-12-14T21:06:28.000Z",
+      "updatedAt": "2025-12-15T22:03:42.000Z",
+      "tags": [
+        "AWS"
+      ]
+    },
+    {
+      "id": "4f40b4d067f205b33ba9",
+      "source": "qiita",
+      "title": "物理出社した回数を自動で計測してグラフにする",
+      "url": "https://qiita.com/tttol777/items/4f40b4d067f205b33ba9",
+      "publishedAt": "2025-12-13T20:29:31.000Z",
+      "updatedAt": "2025-12-13T20:29:31.000Z",
+      "tags": [
+        "出社"
+      ]
+    },
+    {
+      "id": "f78700c88ec2a94d6d8a",
+      "source": "qiita",
+      "title": "MySQL慣れしたエンジニアがOracle DBを初めて触った時に戸惑ったこと",
+      "url": "https://qiita.com/tttol777/items/f78700c88ec2a94d6d8a",
+      "publishedAt": "2025-12-12T20:35:18.000Z",
+      "updatedAt": "2025-12-12T20:35:18.000Z",
+      "tags": [
+        "MySQL",
+        "oracle"
+      ]
+    },
+    {
+      "id": "0b8443ca7ea51f072128",
+      "source": "qiita",
+      "title": "SOLID原則のO：OCPに対する自分の理解",
+      "url": "https://qiita.com/tttol777/items/0b8443ca7ea51f072128",
+      "publishedAt": "2025-12-11T20:27:29.000Z",
+      "updatedAt": "2025-12-11T20:27:29.000Z",
+      "tags": [
+        "設計"
+      ]
+    },
+    {
+      "id": "464eb879a1488a1256e4",
+      "source": "qiita",
+      "title": "vCPUってCPUと何が違う？",
+      "url": "https://qiita.com/tttol777/items/464eb879a1488a1256e4",
+      "publishedAt": "2025-12-10T21:31:19.000Z",
+      "updatedAt": "2025-12-10T21:31:19.000Z",
+      "tags": [
+        "container"
+      ]
+    },
+    {
+      "id": "f9a293cca78bf51d37b4",
+      "source": "qiita",
+      "title": "テストコードにおけるIntegration TestとUnit Testの棲み分けに対する自分の考え方",
+      "url": "https://qiita.com/tttol777/items/f9a293cca78bf51d37b4",
+      "publishedAt": "2025-12-09T20:24:41.000Z",
+      "updatedAt": "2025-12-09T20:24:41.000Z",
+      "tags": [
+        "テスト"
+      ]
+    },
+    {
+      "id": "f0d96dd96786cdfabba8",
+      "source": "qiita",
+      "title": "Javaのstaticブロックの整理",
+      "url": "https://qiita.com/tttol777/items/f0d96dd96786cdfabba8",
+      "publishedAt": "2025-12-08T20:31:36.000Z",
+      "updatedAt": "2025-12-08T20:31:36.000Z",
+      "tags": [
+        "Java"
+      ]
+    },
+    {
+      "id": "f424d2104c5535017453",
+      "source": "qiita",
+      "title": "ls, cdを快適かつ高速に行うためのTIPS",
+      "url": "https://qiita.com/tttol777/items/f424d2104c5535017453",
+      "publishedAt": "2025-12-07T21:01:42.000Z",
+      "updatedAt": "2025-12-07T21:01:42.000Z",
+      "tags": [
+        "Terminal",
+        "CLI"
+      ]
+    },
+    {
+      "id": "c44f9a2b711b47af5ef6",
+      "source": "qiita",
+      "title": "Cookieの属性の整理",
+      "url": "https://qiita.com/tttol777/items/c44f9a2b711b47af5ef6",
+      "publishedAt": "2025-12-06T21:53:57.000Z",
+      "updatedAt": "2025-12-06T21:53:57.000Z",
+      "tags": [
+        "cookie"
+      ]
+    },
+    {
+      "id": "8d7ef9d5e2ac941fe7ba",
+      "source": "qiita",
+      "title": "fzfでターミナル上でのファイル検索を快適にする",
+      "url": "https://qiita.com/tttol777/items/8d7ef9d5e2ac941fe7ba",
+      "publishedAt": "2025-12-05T23:58:26.000Z",
+      "updatedAt": "2025-12-05T23:58:26.000Z",
+      "tags": [
+        "CLI"
+      ]
+    },
+    {
+      "id": "25b25fb571cfe7adbd31",
+      "source": "qiita",
+      "title": "DBを使わずローカルで完結するTODO管理アプリ",
+      "url": "https://qiita.com/tttol777/items/25b25fb571cfe7adbd31",
+      "publishedAt": "2025-12-04T20:35:11.000Z",
+      "updatedAt": "2025-12-04T20:35:11.000Z",
+      "tags": [
+        "Rust"
+      ]
+    },
+    {
+      "id": "a1c540dc89f715025029",
+      "source": "qiita",
+      "title": "NeovimでMarkdownファイルのアウトラインを表示する",
+      "url": "https://qiita.com/tttol777/items/a1c540dc89f715025029",
+      "publishedAt": "2025-12-03T20:24:52.000Z",
+      "updatedAt": "2025-12-03T20:24:52.000Z",
+      "tags": [
+        "neovim"
+      ]
+    },
+    {
+      "id": "cb0d51e0ac07fac7a969",
+      "source": "qiita",
+      "title": "呼ばれてない会議に自分から顔を出すことの効能",
+      "url": "https://qiita.com/tttol777/items/cb0d51e0ac07fac7a969",
+      "publishedAt": "2025-12-02T20:10:20.000Z",
+      "updatedAt": "2025-12-02T20:11:05.000Z",
+      "tags": [
+        "ポエム"
+      ]
+    },
+    {
+      "id": "887a1cce208c7f2922f1",
+      "source": "qiita",
+      "title": "AWS Community Builderになるまでの軌跡",
+      "url": "https://qiita.com/tttol777/items/887a1cce208c7f2922f1",
+      "publishedAt": "2025-12-01T21:55:08.000Z",
+      "updatedAt": "2025-12-01T21:55:08.000Z",
+      "tags": [
+        "AWS"
+      ]
+    },
+    {
+      "id": "5ff8021d8f5a0d76370d",
+      "source": "qiita",
+      "title": "AIの回答待ちの時間に何を為すか",
+      "url": "https://qiita.com/tttol777/items/5ff8021d8f5a0d76370d",
+      "publishedAt": "2025-12-01T21:53:09.000Z",
+      "updatedAt": "2025-12-01T21:53:09.000Z",
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "8599348664289843c381",
+      "source": "qiita",
+      "title": "Docker Desktop以外のランタイムから起動したコンテナをDocker CLIから操作できる理由",
+      "url": "https://qiita.com/tttol777/items/8599348664289843c381",
+      "publishedAt": "2025-11-30T20:28:16.000Z",
+      "updatedAt": "2025-11-30T21:49:52.000Z",
+      "tags": [
+        "Docker"
+      ]
+    },
+    {
+      "id": "595cb9010562d4d35251",
+      "source": "qiita",
+      "title": "git rebaseとgit mergeの違い",
+      "url": "https://qiita.com/tttol777/items/595cb9010562d4d35251",
+      "publishedAt": "2025-11-14T22:37:21.000Z",
+      "updatedAt": "2025-11-14T22:37:21.000Z",
+      "tags": [
+        "Git"
+      ]
     },
     {
       "id": "https://blog.about-tttol.link/blog/mac-jis-to-us/",
@@ -100,6 +439,18 @@
       "tags": []
     },
     {
+      "id": "63fc65db384eb3901902",
+      "source": "qiita",
+      "title": "Neovim v0.11におけるLSPの設定",
+      "url": "https://qiita.com/tttol777/items/63fc65db384eb3901902",
+      "publishedAt": "2025-09-18T12:40:49.000Z",
+      "updatedAt": "2025-09-18T12:46:40.000Z",
+      "tags": [
+        "neovim",
+        "LSP"
+      ]
+    },
+    {
       "id": "https://blog.about-tttol.link/blog/job-change-2025/",
       "source": "blog",
       "title": "転職活動2025",
@@ -107,6 +458,168 @@
       "publishedAt": "2025-09-08T21:08:00.000Z",
       "updatedAt": "2025-09-08T21:08:00.000Z",
       "tags": []
+    },
+    {
+      "id": "b8e387459c63ebb15e9f",
+      "source": "qiita",
+      "title": "xcodebuildコマンドがエラーになる時の対処",
+      "url": "https://qiita.com/tttol777/items/b8e387459c63ebb15e9f",
+      "publishedAt": "2025-08-12T22:34:41.000Z",
+      "updatedAt": "2025-08-12T22:34:41.000Z",
+      "tags": [
+        "Xcode"
+      ]
+    },
+    {
+      "id": "55eec81b86cec0ca3810",
+      "source": "qiita",
+      "title": "gRPCに対する自分の理解",
+      "url": "https://qiita.com/tttol777/items/55eec81b86cec0ca3810",
+      "publishedAt": "2025-07-06T21:46:42.000Z",
+      "updatedAt": "2025-07-06T22:42:49.000Z",
+      "tags": [
+        "メモ",
+        "gRPC"
+      ]
+    },
+    {
+      "id": "04ebe690c2291ba531e2",
+      "source": "qiita",
+      "title": "OAuth 2.0, Open ID Connect, SAMLの整理",
+      "url": "https://qiita.com/tttol777/items/04ebe690c2291ba531e2",
+      "publishedAt": "2025-07-03T20:24:20.000Z",
+      "updatedAt": "2025-07-07T21:53:34.000Z",
+      "tags": [
+        "OAuth",
+        "SAML",
+        "OIDC"
+      ]
+    },
+    {
+      "id": "f8c0a2bc0ef6ccb9d8b7",
+      "source": "qiita",
+      "title": "JVMのGarbage Collectionに対する自分の理解",
+      "url": "https://qiita.com/tttol777/items/f8c0a2bc0ef6ccb9d8b7",
+      "publishedAt": "2025-07-03T20:23:45.000Z",
+      "updatedAt": "2025-07-03T20:23:45.000Z",
+      "tags": [
+        "Java",
+        "GarbageCollection"
+      ]
+    },
+    {
+      "id": "1836fee58dfaea9b553f",
+      "source": "qiita",
+      "title": "ブラウザで`https://example.com`が表示されるまでに起こること",
+      "url": "https://qiita.com/tttol777/items/1836fee58dfaea9b553f",
+      "publishedAt": "2025-06-12T01:00:11.000Z",
+      "updatedAt": "2025-06-12T01:00:11.000Z",
+      "tags": [
+        "TCP"
+      ]
+    },
+    {
+      "id": "a41205ace9b6ea620c03",
+      "source": "qiita",
+      "title": "Exponential backoff and jitter/指数バックオフ",
+      "url": "https://qiita.com/tttol777/items/a41205ace9b6ea620c03",
+      "publishedAt": "2025-06-04T21:40:16.000Z",
+      "updatedAt": "2025-06-25T21:07:34.000Z",
+      "tags": [
+        "Java"
+      ]
+    },
+    {
+      "id": "1985cacf438ef01a5bbd",
+      "source": "qiita",
+      "title": "VM vs コンテナの整理",
+      "url": "https://qiita.com/tttol777/items/1985cacf438ef01a5bbd",
+      "publishedAt": "2025-06-04T02:53:10.000Z",
+      "updatedAt": "2025-06-04T02:53:10.000Z",
+      "tags": [
+        "VM",
+        "container"
+      ]
+    },
+    {
+      "id": "2047ca4ca896cc7f581c",
+      "source": "qiita",
+      "title": "AWS CDKで構築！Next.js SSGで作った静的サイトをホスティングする",
+      "url": "https://qiita.com/tttol777/items/2047ca4ca896cc7f581c",
+      "publishedAt": "2025-05-09T08:02:41.000Z",
+      "updatedAt": "2025-05-09T10:20:15.000Z",
+      "tags": [
+        "CDK"
+      ]
+    },
+    {
+      "id": "b705bc7822f7ed05968b",
+      "source": "qiita",
+      "title": "AWS CDK L2 Constructに引数を追加する対応をステップごとに解説",
+      "url": "https://qiita.com/tttol777/items/b705bc7822f7ed05968b",
+      "publishedAt": "2025-04-25T21:04:46.000Z",
+      "updatedAt": "2025-04-25T21:04:46.000Z",
+      "tags": [
+        "OSS",
+        "CDK"
+      ]
+    },
+    {
+      "id": "315a93ffbd5a110e7cae",
+      "source": "qiita",
+      "title": "AWS認定を3ヶ月で全冠しました",
+      "url": "https://qiita.com/tttol777/items/315a93ffbd5a110e7cae",
+      "publishedAt": "2025-03-28T03:25:14.000Z",
+      "updatedAt": "2025-04-01T12:41:44.000Z",
+      "tags": [
+        "AWS認定試験"
+      ]
+    },
+    {
+      "id": "1d34146d6cd70e9642d6",
+      "source": "qiita",
+      "title": "CDKコントリビューション 初心者向けTIPS",
+      "url": "https://qiita.com/tttol777/items/1d34146d6cd70e9642d6",
+      "publishedAt": "2025-03-25T11:04:44.000Z",
+      "updatedAt": "2025-04-30T21:05:58.000Z",
+      "tags": [
+        "CDK"
+      ]
+    },
+    {
+      "id": "54931834b4c404ea1913",
+      "source": "qiita",
+      "title": "AWS Amplifyで生成したLambda関数からDynamoDBを参照する方法",
+      "url": "https://qiita.com/tttol777/items/54931834b4c404ea1913",
+      "publishedAt": "2025-03-06T07:21:37.000Z",
+      "updatedAt": "2025-03-06T07:21:37.000Z",
+      "tags": [
+        "amplify"
+      ]
+    },
+    {
+      "id": "f48c3952544a80034d0a",
+      "source": "qiita",
+      "title": "中間CA・ルートCA・SSL代理証明の整理",
+      "url": "https://qiita.com/tttol777/items/f48c3952544a80034d0a",
+      "publishedAt": "2025-01-28T22:09:23.000Z",
+      "updatedAt": "2025-02-15T21:07:36.000Z",
+      "tags": [
+        "SSL証明書",
+        "ネットワークエンジニア"
+      ]
+    },
+    {
+      "id": "b6d49e0c9c457131730d",
+      "source": "qiita",
+      "title": "Amplifyデプロイ中にcdk bootstrapが失敗するときの対処",
+      "url": "https://qiita.com/tttol777/items/b6d49e0c9c457131730d",
+      "publishedAt": "2025-01-16T21:52:45.000Z",
+      "updatedAt": "2025-01-16T21:54:05.000Z",
+      "tags": [
+        "amplify",
+        "CDK"
+      ]
     },
     {
       "id": "https://blog.about-tttol.link/blog/2024%E5%B9%B4/",
@@ -118,6 +631,63 @@
       "tags": []
     },
     {
+      "id": "4eb9dfa19e5df8d172dd",
+      "source": "qiita",
+      "title": "私とAmplifyの1年間ふりかえり",
+      "url": "https://qiita.com/tttol777/items/4eb9dfa19e5df8d172dd",
+      "publishedAt": "2024-12-24T04:36:42.000Z",
+      "updatedAt": "2024-12-24T04:36:42.000Z",
+      "tags": [
+        "amplify"
+      ]
+    },
+    {
+      "id": "3819c8f6f1bdd5e4a85a",
+      "source": "qiita",
+      "title": "Amazon API Gatewayを使ってCORSを理解する",
+      "url": "https://qiita.com/tttol777/items/3819c8f6f1bdd5e4a85a",
+      "publishedAt": "2024-11-28T21:34:50.000Z",
+      "updatedAt": "2024-11-28T21:37:20.000Z",
+      "tags": [
+        "AWS",
+        "CORS",
+        "APIGateway"
+      ]
+    },
+    {
+      "id": "f9efead1a666cc1db75f",
+      "source": "qiita",
+      "title": "ディスクへのアクセスはなぜ遅いと言われるのか",
+      "url": "https://qiita.com/tttol777/items/f9efead1a666cc1db75f",
+      "publishedAt": "2024-11-25T23:29:36.000Z",
+      "updatedAt": "2024-11-25T23:29:36.000Z",
+      "tags": [
+        "コンピューターサイエンス"
+      ]
+    },
+    {
+      "id": "c3d753e4db5a57f53f0c",
+      "source": "qiita",
+      "title": "Amazon SESのメール配信に関する整理",
+      "url": "https://qiita.com/tttol777/items/c3d753e4db5a57f53f0c",
+      "publishedAt": "2024-11-18T22:33:46.000Z",
+      "updatedAt": "2024-11-18T22:33:46.000Z",
+      "tags": [
+        "AWS"
+      ]
+    },
+    {
+      "id": "31ba0e6b2fd29961e8d0",
+      "source": "qiita",
+      "title": "JVMを意図的にクラッシュさせる方法",
+      "url": "https://qiita.com/tttol777/items/31ba0e6b2fd29961e8d0",
+      "publishedAt": "2024-11-10T00:52:37.000Z",
+      "updatedAt": "2024-11-10T06:04:27.000Z",
+      "tags": [
+        "Java"
+      ]
+    },
+    {
       "id": "https://blog.about-tttol.link/blog/paternity-leave/",
       "source": "blog",
       "title": "育休ふりかえり",
@@ -125,6 +695,118 @@
       "publishedAt": "2024-11-04T07:07:00.000Z",
       "updatedAt": "2024-11-04T07:07:00.000Z",
       "tags": []
+    },
+    {
+      "id": "6d890fa96c873b229f1f",
+      "source": "qiita",
+      "title": "S3のコンソールからAmplify Hostingを使えるようになったぞ！",
+      "url": "https://qiita.com/tttol777/items/6d890fa96c873b229f1f",
+      "publishedAt": "2024-10-31T23:29:22.000Z",
+      "updatedAt": "2024-10-31T23:29:22.000Z",
+      "tags": [
+        "S3",
+        "amplify"
+      ]
+    },
+    {
+      "id": "54dd72384acca7135c4d",
+      "source": "qiita",
+      "title": "Next.js(SSG)のアプリをAWS Amplifyにデプロイする際の注意点まとめ - 2024",
+      "url": "https://qiita.com/tttol777/items/54dd72384acca7135c4d",
+      "publishedAt": "2024-10-08T22:44:40.000Z",
+      "updatedAt": "2024-10-08T22:44:40.000Z",
+      "tags": [
+        "Amplfy"
+      ]
+    },
+    {
+      "id": "ac4f6562eee4fbe49655",
+      "source": "qiita",
+      "title": "AWS Amplify製のアプリにパスキー認証を導入する方法",
+      "url": "https://qiita.com/tttol777/items/ac4f6562eee4fbe49655",
+      "publishedAt": "2024-10-01T22:03:01.000Z",
+      "updatedAt": "2024-10-01T22:03:01.000Z",
+      "tags": [
+        "Next.js",
+        "amplify",
+        "WebAuthn",
+        "パスキー"
+      ]
+    },
+    {
+      "id": "524c2011bfe70a3426a7",
+      "source": "qiita",
+      "title": "Storage Browser for Amazon S3をさわってみた！",
+      "url": "https://qiita.com/tttol777/items/524c2011bfe70a3426a7",
+      "publishedAt": "2024-09-07T15:26:32.000Z",
+      "updatedAt": "2024-10-01T22:10:22.000Z",
+      "tags": [
+        "AWS"
+      ]
+    },
+    {
+      "id": "d79b5e67de4c33e27858",
+      "source": "qiita",
+      "title": "AWS Amplifyで私用の家計管理アプリを開発して運用している話",
+      "url": "https://qiita.com/tttol777/items/d79b5e67de4c33e27858",
+      "publishedAt": "2024-08-19T22:05:07.000Z",
+      "updatedAt": "2024-08-20T06:29:35.000Z",
+      "tags": [
+        "AWS",
+        "Next.js",
+        "amplify"
+      ]
+    },
+    {
+      "id": "4fb0d8ca290fb1de992a",
+      "source": "qiita",
+      "title": "Amplify Gen2のライブラリアップデートに半年遅れでキャッチアップします",
+      "url": "https://qiita.com/tttol777/items/4fb0d8ca290fb1de992a",
+      "publishedAt": "2024-08-11T01:34:44.000Z",
+      "updatedAt": "2024-08-11T01:34:44.000Z",
+      "tags": [
+        "AWS",
+        "TypeScript",
+        "Next.js",
+        "amplify"
+      ]
+    },
+    {
+      "id": "061686669ff45babf443",
+      "source": "qiita",
+      "title": "AWS Herosに選出される要因をAmazon Bedrockを使って分析してみる",
+      "url": "https://qiita.com/tttol777/items/061686669ff45babf443",
+      "publishedAt": "2024-07-22T22:03:58.000Z",
+      "updatedAt": "2024-07-23T00:46:14.000Z",
+      "tags": [
+        "AWS",
+        "AI",
+        "bedrock"
+      ]
+    },
+    {
+      "id": "cfd5fa540493cd6be9f9",
+      "source": "qiita",
+      "title": "おひとりさまAWS Organizationsに入門する",
+      "url": "https://qiita.com/tttol777/items/cfd5fa540493cd6be9f9",
+      "publishedAt": "2024-07-21T23:13:25.000Z",
+      "updatedAt": "2025-04-21T21:22:55.000Z",
+      "tags": [
+        "AWS",
+        "IAM",
+        "Organizations"
+      ]
+    },
+    {
+      "id": "8f31a4faf72cbc2fa0ae",
+      "source": "qiita",
+      "title": "Raspberry Pi でベビーモニターを自作する",
+      "url": "https://qiita.com/tttol777/items/8f31a4faf72cbc2fa0ae",
+      "publishedAt": "2024-07-16T12:56:17.000Z",
+      "updatedAt": "2024-07-16T12:56:17.000Z",
+      "tags": [
+        "RaspberryPi"
+      ]
     },
     {
       "id": "https://zenn.dev/tttol/articles/c7dfc74d27e45d",
@@ -154,6 +836,105 @@
       "tags": []
     },
     {
+      "id": "5f5a3ba16009b4fa6bd3",
+      "source": "qiita",
+      "title": "Rolling UpdateとBlue/Green Deploymentの違いを整理する",
+      "url": "https://qiita.com/tttol777/items/5f5a3ba16009b4fa6bd3",
+      "publishedAt": "2024-06-04T23:20:29.000Z",
+      "updatedAt": "2024-06-04T23:20:29.000Z",
+      "tags": [
+        "kubernetes",
+        "rolling-update",
+        "BlueGreenDeployment"
+      ]
+    },
+    {
+      "id": "d2b78a91eded6ce3d655",
+      "source": "qiita",
+      "title": "Javaのスレッドモデル：グリーンスレッドモデル・ネイティブスレッドモデル・M:Nモデル",
+      "url": "https://qiita.com/tttol777/items/d2b78a91eded6ce3d655",
+      "publishedAt": "2024-05-23T23:14:27.000Z",
+      "updatedAt": "2024-07-16T12:48:52.000Z",
+      "tags": [
+        "Java"
+      ]
+    },
+    {
+      "id": "f72d1619eed422c93bfe",
+      "source": "qiita",
+      "title": "「ログイン成功後に毎回XXXを実行したい」をSpring Securityで実装する",
+      "url": "https://qiita.com/tttol777/items/f72d1619eed422c93bfe",
+      "publishedAt": "2024-03-22T07:03:39.000Z",
+      "updatedAt": "2024-03-22T07:07:35.000Z",
+      "tags": [
+        "Java",
+        "SpringBoot",
+        "SpringSecurity"
+      ]
+    },
+    {
+      "id": "4a50ed1452488d5e6548",
+      "source": "qiita",
+      "title": "Spring Boot 3.2.3 × Redisでセッション管理する",
+      "url": "https://qiita.com/tttol777/items/4a50ed1452488d5e6548",
+      "publishedAt": "2024-02-26T03:40:41.000Z",
+      "updatedAt": "2024-02-26T13:03:57.000Z",
+      "tags": [
+        "Redis",
+        "SpringBoot"
+      ]
+    },
+    {
+      "id": "07232b544852f64cf127",
+      "source": "qiita",
+      "title": "DIコンテナを自作する",
+      "url": "https://qiita.com/tttol777/items/07232b544852f64cf127",
+      "publishedAt": "2024-02-11T01:25:05.000Z",
+      "updatedAt": "2024-02-11T01:25:05.000Z",
+      "tags": [
+        "Java",
+        "SpringBoot"
+      ]
+    },
+    {
+      "id": "bf810301cd0bdce21d02",
+      "source": "qiita",
+      "title": "Java21のVirtualThreadsに対する自分の理解",
+      "url": "https://qiita.com/tttol777/items/bf810301cd0bdce21d02",
+      "publishedAt": "2024-01-28T02:29:23.000Z",
+      "updatedAt": "2024-01-28T02:31:01.000Z",
+      "tags": [
+        "Java",
+        "SpringBoot"
+      ]
+    },
+    {
+      "id": "2fc940d715183f04f7cf",
+      "source": "qiita",
+      "title": "SPF, DKIM, DMARCに対する自分の理解",
+      "url": "https://qiita.com/tttol777/items/2fc940d715183f04f7cf",
+      "publishedAt": "2024-01-18T23:16:39.000Z",
+      "updatedAt": "2024-01-18T23:16:39.000Z",
+      "tags": [
+        "dns",
+        "DMARC",
+        "DKIM",
+        "spf"
+      ]
+    },
+    {
+      "id": "85454abfc859f4de1d1d",
+      "source": "qiita",
+      "title": "さや香の「見せ算」をPythonで実装する",
+      "url": "https://qiita.com/tttol777/items/85454abfc859f4de1d1d",
+      "publishedAt": "2023-12-25T13:12:14.000Z",
+      "updatedAt": "2023-12-26T23:52:10.000Z",
+      "tags": [
+        "Python",
+        "ネタ"
+      ]
+    },
+    {
       "id": "https://zenn.dev/tttol/articles/7b595a66c18bf9",
       "source": "zenn",
       "title": "AWS re:Invent 2023のために英日同時通訳アプリを試作した",
@@ -179,6 +960,555 @@
       "publishedAt": "2023-02-21T02:51:05.000Z",
       "updatedAt": "2023-02-21T02:51:05.000Z",
       "tags": []
+    },
+    {
+      "id": "591832f5c64c5ba94798",
+      "source": "qiita",
+      "title": "`gradlew bootBuildImage`で作成したSpringBootアプリコンテナでThymeleafテンプレートがmight not existになる",
+      "url": "https://qiita.com/tttol777/items/591832f5c64c5ba94798",
+      "publishedAt": "2023-01-29T23:30:46.000Z",
+      "updatedAt": "2023-02-04T00:12:47.000Z",
+      "tags": [
+        "gradle",
+        "Docker",
+        "Thymeleaf",
+        "SpringBoot"
+      ]
+    },
+    {
+      "id": "367b1cf95f78b0002709",
+      "source": "qiita",
+      "title": "【Java】CollectorsAPI 1000本ノック",
+      "url": "https://qiita.com/tttol777/items/367b1cf95f78b0002709",
+      "publishedAt": "2023-01-22T07:17:30.000Z",
+      "updatedAt": "2023-01-22T13:39:07.000Z",
+      "tags": [
+        "Java"
+      ]
+    },
+    {
+      "id": "05594fe69980f565ca29",
+      "source": "qiita",
+      "title": "resilience4jを使ったCircuitBreakerパターン",
+      "url": "https://qiita.com/tttol777/items/05594fe69980f565ca29",
+      "publishedAt": "2023-01-02T01:52:02.000Z",
+      "updatedAt": "2023-01-02T01:52:02.000Z",
+      "tags": [
+        "Java",
+        "CircuitBreaker"
+      ]
+    },
+    {
+      "id": "1bf0f85e3cdc1478a431",
+      "source": "qiita",
+      "title": "Gradle×springbootアプリケーションをdockerイメージ化してコンテナ起動する",
+      "url": "https://qiita.com/tttol777/items/1bf0f85e3cdc1478a431",
+      "publishedAt": "2023-01-01T10:01:34.000Z",
+      "updatedAt": "2023-01-01T10:01:34.000Z",
+      "tags": [
+        "Java",
+        "gradle",
+        "Docker",
+        "SpringBoot"
+      ]
+    },
+    {
+      "id": "604b50bbac4062ac3506",
+      "source": "qiita",
+      "title": "【Mac】2行でJDKバージョンを切り替える",
+      "url": "https://qiita.com/tttol777/items/604b50bbac4062ac3506",
+      "publishedAt": "2022-12-30T10:01:21.000Z",
+      "updatedAt": "2022-12-30T10:01:21.000Z",
+      "tags": [
+        "Java",
+        "Mac"
+      ]
+    },
+    {
+      "id": "1824546b8af6b099ad7d",
+      "source": "qiita",
+      "title": "MyBatis Generatorの新しいデフォルトランタイムMyBatis3DynamicSqlをJavaから実行してみる",
+      "url": "https://qiita.com/tttol777/items/1824546b8af6b099ad7d",
+      "publishedAt": "2022-10-12T15:25:44.000Z",
+      "updatedAt": "2022-10-12T23:11:34.000Z",
+      "tags": [
+        "Java",
+        "MyBatis",
+        "SpringBoot",
+        "MyBatisGenerator",
+        "MyBatis-Dynamic-SQL"
+      ]
+    },
+    {
+      "id": "16fa0037f47e981aa297",
+      "source": "qiita",
+      "title": "Docker imageのJDKを使ってwebアプリを起動する",
+      "url": "https://qiita.com/tttol777/items/16fa0037f47e981aa297",
+      "publishedAt": "2022-10-11T13:57:51.000Z",
+      "updatedAt": "2022-10-11T13:57:51.000Z",
+      "tags": [
+        "Docker"
+      ]
+    },
+    {
+      "id": "98a048c6dbec4fc4ad85",
+      "source": "qiita",
+      "title": "docker-composeで起動したpostgresqlの初回起動時スクリプト実行とDB永続化の方法",
+      "url": "https://qiita.com/tttol777/items/98a048c6dbec4fc4ad85",
+      "publishedAt": "2022-10-05T15:11:15.000Z",
+      "updatedAt": "2022-10-06T01:06:18.000Z",
+      "tags": [
+        "PostgreSQL",
+        "Docker",
+        "docker-compose"
+      ]
+    },
+    {
+      "id": "7026a2f37c9307a0f65a",
+      "source": "qiita",
+      "title": "JavaのSerializableに対する自分の理解",
+      "url": "https://qiita.com/tttol777/items/7026a2f37c9307a0f65a",
+      "publishedAt": "2022-09-13T23:29:22.000Z",
+      "updatedAt": "2022-09-13T23:29:22.000Z",
+      "tags": [
+        "Java"
+      ]
+    },
+    {
+      "id": "8d76fbaa93a9ac90a098",
+      "source": "qiita",
+      "title": "【Java】Stream API 1000本ノック",
+      "url": "https://qiita.com/tttol777/items/8d76fbaa93a9ac90a098",
+      "publishedAt": "2022-08-29T23:37:28.000Z",
+      "updatedAt": "2022-08-29T23:37:28.000Z",
+      "tags": [
+        "Java",
+        "StreamAPI"
+      ]
+    },
+    {
+      "id": "300fb99ed34ba978d266",
+      "source": "qiita",
+      "title": "ThymeleafからJavaのstaticメソッド等を呼び出す",
+      "url": "https://qiita.com/tttol777/items/300fb99ed34ba978d266",
+      "publishedAt": "2022-08-08T02:11:54.000Z",
+      "updatedAt": "2022-08-08T02:11:54.000Z",
+      "tags": [
+        "Java",
+        "Thymeleaf"
+      ]
+    },
+    {
+      "id": "6f9fd1c1522bf969b8f4",
+      "source": "qiita",
+      "title": "GitLabのCI/CDで使用するgitlab-runnerのインストールもろもろ",
+      "url": "https://qiita.com/tttol777/items/6f9fd1c1522bf969b8f4",
+      "publishedAt": "2022-08-07T13:51:59.000Z",
+      "updatedAt": "2022-08-07T13:51:59.000Z",
+      "tags": [
+        "GitLab"
+      ]
+    },
+    {
+      "id": "e6aa4334fba250c738de",
+      "source": "qiita",
+      "title": "【Java】Stream, Collectorsを使ってオブジェクトのListに対してsort, distinctを行う",
+      "url": "https://qiita.com/tttol777/items/e6aa4334fba250c738de",
+      "publishedAt": "2022-05-18T15:24:37.000Z",
+      "updatedAt": "2022-05-28T07:21:47.000Z",
+      "tags": [
+        "Java"
+      ]
+    },
+    {
+      "id": "5da6598edcfa6f89e26d",
+      "source": "qiita",
+      "title": "Java8初期で知識が止まってる化石プログラマーがJava17を触って得た知見",
+      "url": "https://qiita.com/tttol777/items/5da6598edcfa6f89e26d",
+      "publishedAt": "2022-05-17T09:51:30.000Z",
+      "updatedAt": "2023-01-10T00:51:55.000Z",
+      "tags": [
+        "Java"
+      ]
+    },
+    {
+      "id": "e46a0af0a0a084900845",
+      "source": "qiita",
+      "title": "SpringBoot×GradleのWebアプリを作成してCircleCIで自動テストできるようにする",
+      "url": "https://qiita.com/tttol777/items/e46a0af0a0a084900845",
+      "publishedAt": "2022-04-03T06:18:37.000Z",
+      "updatedAt": "2022-04-03T06:43:39.000Z",
+      "tags": [
+        "gradle",
+        "CircleCI",
+        "SpringBoot"
+      ]
+    },
+    {
+      "id": "dda7651b58d579a19ca8",
+      "source": "qiita",
+      "title": "SpringBoot × Gradleでプロジェクトを作ってSTS(Eclipse)にインポートするまで",
+      "url": "https://qiita.com/tttol777/items/dda7651b58d579a19ca8",
+      "publishedAt": "2021-08-29T11:03:44.000Z",
+      "updatedAt": "2021-08-29T11:03:44.000Z",
+      "tags": [
+        "Eclipse",
+        "gradle",
+        "STS",
+        "SpringBoot"
+      ]
+    },
+    {
+      "id": "3ed901cd7b8d3a8aaa3b",
+      "source": "qiita",
+      "title": "テストコード素人がJUnitを1か月触って学んだこと",
+      "url": "https://qiita.com/tttol777/items/3ed901cd7b8d3a8aaa3b",
+      "publishedAt": "2021-08-25T07:39:24.000Z",
+      "updatedAt": "2023-01-03T02:51:02.000Z",
+      "tags": [
+        "JUnit",
+        "SpringBoot"
+      ]
+    },
+    {
+      "id": "20e76f1545da954811c3",
+      "source": "qiita",
+      "title": "AWSの請求額に納得できないときに見直すべき4つの項目",
+      "url": "https://qiita.com/tttol777/items/20e76f1545da954811c3",
+      "publishedAt": "2021-01-12T14:08:22.000Z",
+      "updatedAt": "2021-01-12T14:08:54.000Z",
+      "tags": [
+        "AWS"
+      ]
+    },
+    {
+      "id": "a519c8c4dd38df15d530",
+      "source": "qiita",
+      "title": "競プロで制約が極端に小さいとき大体bit全探索で解ける説",
+      "url": "https://qiita.com/tttol777/items/a519c8c4dd38df15d530",
+      "publishedAt": "2020-05-12T10:52:42.000Z",
+      "updatedAt": "2020-05-12T10:52:42.000Z",
+      "tags": [
+        "AtCoder",
+        "bit全探索"
+      ]
+    },
+    {
+      "id": "7cf47b593d07074bbc02",
+      "source": "qiita",
+      "title": "Macに入れていた python を 3.7 -> 3.8 にアプデする",
+      "url": "https://qiita.com/tttol777/items/7cf47b593d07074bbc02",
+      "publishedAt": "2020-04-26T09:29:20.000Z",
+      "updatedAt": "2020-04-26T09:36:32.000Z",
+      "tags": [
+        "Python",
+        "Mac",
+        "備忘録"
+      ]
+    },
+    {
+      "id": "333f74a636f194a2310d",
+      "source": "qiita",
+      "title": "【python】nCkを導出する方法(ABC156-D)",
+      "url": "https://qiita.com/tttol777/items/333f74a636f194a2310d",
+      "publishedAt": "2020-02-23T09:20:59.000Z",
+      "updatedAt": "2020-04-09T06:22:53.000Z",
+      "tags": [
+        "Python",
+        "AtCoder",
+        "競技プログラミング"
+      ]
+    },
+    {
+      "id": "18a1af485a407b4efab9",
+      "source": "qiita",
+      "title": "formのonsubmitが実行されないケース",
+      "url": "https://qiita.com/tttol777/items/18a1af485a407b4efab9",
+      "publishedAt": "2020-02-07T04:04:03.000Z",
+      "updatedAt": "2020-02-07T04:04:03.000Z",
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "id": "2f3c89e1921eab83f72c",
+      "source": "qiita",
+      "title": "Atcoderで累積和が出てきたのでこれを機にちょっと勉強する",
+      "url": "https://qiita.com/tttol777/items/2f3c89e1921eab83f72c",
+      "publishedAt": "2019-11-24T09:25:23.000Z",
+      "updatedAt": "2024-04-11T22:21:43.000Z",
+      "tags": [
+        "Python",
+        "AtCoder",
+        "累積和"
+      ]
+    },
+    {
+      "id": "3db49c97763042e95eb5",
+      "source": "qiita",
+      "title": "ルパン三世のカシャカシャってなるタイトルコールを好きな文字列で生成する",
+      "url": "https://qiita.com/tttol777/items/3db49c97763042e95eb5",
+      "publishedAt": "2019-09-23T10:00:24.000Z",
+      "updatedAt": "2023-01-10T07:10:41.000Z",
+      "tags": [
+        "JavaScript",
+        "非同期処理",
+        "ネタ"
+      ]
+    },
+    {
+      "id": "c9e5c74be3366df65bce",
+      "source": "qiita",
+      "title": "話題の粛清ソートアルゴリズム「スターリンソート」をPythonで実装した",
+      "url": "https://qiita.com/tttol777/items/c9e5c74be3366df65bce",
+      "publishedAt": "2019-07-30T13:44:08.000Z",
+      "updatedAt": "2019-08-02T05:29:54.000Z",
+      "tags": [
+        "Python",
+        "ネタ",
+        "スターリンソート"
+      ]
+    },
+    {
+      "id": "74a26a7e2301ddc9601c",
+      "source": "qiita",
+      "title": "「2==1==0 → true」ワイ「！？」",
+      "url": "https://qiita.com/tttol777/items/74a26a7e2301ddc9601c",
+      "publishedAt": "2019-06-23T15:25:56.000Z",
+      "updatedAt": "2019-06-24T03:26:53.000Z",
+      "tags": [
+        "JavaScript",
+        "小ネタ",
+        "新人プログラマ応援"
+      ]
+    },
+    {
+      "id": "02295e2f49febe404a98",
+      "source": "qiita",
+      "title": "TeraTermのファイル転送で「No such file or directory」と怒られたとき",
+      "url": "https://qiita.com/tttol777/items/02295e2f49febe404a98",
+      "publishedAt": "2019-06-15T09:32:13.000Z",
+      "updatedAt": "2019-06-15T09:32:13.000Z",
+      "tags": [
+        "Windows",
+        "Linux",
+        "tips",
+        "teraterm",
+        "備忘録"
+      ]
+    },
+    {
+      "id": "e57e255ba14715cd1e87",
+      "source": "qiita",
+      "title": "スペースの連続入力を弾く入力フォームの作り方",
+      "url": "https://qiita.com/tttol777/items/e57e255ba14715cd1e87",
+      "publishedAt": "2019-05-27T14:20:27.000Z",
+      "updatedAt": "2019-05-28T13:34:24.000Z",
+      "tags": [
+        "JavaScript",
+        "正規表現"
+      ]
+    },
+    {
+      "id": "920ed8757ed20244d216",
+      "source": "qiita",
+      "title": "Vue3.x系で作ったアプリをFirebaseにデプロイするまでの流れ【初心者向け】",
+      "url": "https://qiita.com/tttol777/items/920ed8757ed20244d216",
+      "publishedAt": "2019-05-02T03:43:27.000Z",
+      "updatedAt": "2019-05-02T04:03:26.000Z",
+      "tags": [
+        "Vue.js",
+        "Firebase",
+        "新人プログラマ応援",
+        "vue-cli"
+      ]
+    },
+    {
+      "id": "756a23478bef3e634e81",
+      "source": "qiita",
+      "title": "javascriptでGoogleDriveにアクセスする",
+      "url": "https://qiita.com/tttol777/items/756a23478bef3e634e81",
+      "publishedAt": "2019-04-25T14:47:42.000Z",
+      "updatedAt": "2019-04-25T14:53:25.000Z",
+      "tags": [
+        "JavaScript",
+        "GoogleDrive"
+      ]
+    },
+    {
+      "id": "f96b0971859d480d4601",
+      "source": "qiita",
+      "title": "【GAS】Font Awesome でくるくる回るローディングアイコンを実装する",
+      "url": "https://qiita.com/tttol777/items/f96b0971859d480d4601",
+      "publishedAt": "2019-03-10T09:05:04.000Z",
+      "updatedAt": "2019-03-10T09:10:05.000Z",
+      "tags": [
+        "HTML",
+        "JavaScript",
+        "GoogleAppsScript",
+        "FontAwesome"
+      ]
+    },
+    {
+      "id": "04c3a82faa54e99c52a5",
+      "source": "qiita",
+      "title": "いつもなんとなくで使っているdisplayプロパティについて",
+      "url": "https://qiita.com/tttol777/items/04c3a82faa54e99c52a5",
+      "publishedAt": "2018-11-07T22:31:46.000Z",
+      "updatedAt": "2018-11-07T22:31:46.000Z",
+      "tags": [
+        "HTML",
+        "CSS",
+        "備忘録",
+        "新人プログラマ応援"
+      ]
+    },
+    {
+      "id": "5296377aab1c37d0240e",
+      "source": "qiita",
+      "title": "Qiita以外のサイトでもQiitaっぽくソースコードを表示したい",
+      "url": "https://qiita.com/tttol777/items/5296377aab1c37d0240e",
+      "publishedAt": "2018-10-09T15:28:03.000Z",
+      "updatedAt": "2019-02-24T09:07:17.000Z",
+      "tags": [
+        "Qiita",
+        "CSS",
+        "tips",
+        "備忘録"
+      ]
+    },
+    {
+      "id": "adf732adf546a7a87bf5",
+      "source": "qiita",
+      "title": "javascriptのおかげで卒論でちょっと楽できた話",
+      "url": "https://qiita.com/tttol777/items/adf732adf546a7a87bf5",
+      "publishedAt": "2018-10-06T04:12:31.000Z",
+      "updatedAt": "2024-04-11T22:19:46.000Z",
+      "tags": [
+        "HTML",
+        "JavaScript",
+        "卒論",
+        "学生",
+        "大学生"
+      ]
+    },
+    {
+      "id": "c0fced5e1fde84ed09b0",
+      "source": "qiita",
+      "title": "UNIX系計算言語”bc”をちゃんと調べてみる",
+      "url": "https://qiita.com/tttol777/items/c0fced5e1fde84ed09b0",
+      "publishedAt": "2018-08-20T00:48:19.000Z",
+      "updatedAt": "2024-04-11T22:18:32.000Z",
+      "tags": [
+        "Mac",
+        "Terminal",
+        "UNIX",
+        "bc"
+      ]
+    },
+    {
+      "id": "b14ab34415a1ebd8a9c5",
+      "source": "qiita",
+      "title": "えっ、まだPostgreSQLでダブルクォーテーション使ってるの？",
+      "url": "https://qiita.com/tttol777/items/b14ab34415a1ebd8a9c5",
+      "publishedAt": "2018-08-08T22:08:04.000Z",
+      "updatedAt": "2021-04-13T23:09:44.000Z",
+      "tags": [
+        "SQL",
+        "PostgreSQL",
+        "DB",
+        "備忘録",
+        "新人プログラマ応援"
+      ]
+    },
+    {
+      "id": "d24e182ac405fbc8a280",
+      "source": "qiita",
+      "title": "フォースとともにあらんことを…ヨーダ記法について",
+      "url": "https://qiita.com/tttol777/items/d24e182ac405fbc8a280",
+      "publishedAt": "2018-08-05T06:39:37.000Z",
+      "updatedAt": "2021-02-26T07:28:19.000Z",
+      "tags": [
+        "tips",
+        "ポエム",
+        "新人プログラマ応援"
+      ]
+    },
+    {
+      "id": "754180f91a8c1554287d",
+      "source": "qiita",
+      "title": "【java】appendの中で\"+\"は使わない！",
+      "url": "https://qiita.com/tttol777/items/754180f91a8c1554287d",
+      "publishedAt": "2018-07-21T10:18:37.000Z",
+      "updatedAt": "2022-01-19T01:59:47.000Z",
+      "tags": [
+        "Java",
+        "備忘録"
+      ]
+    },
+    {
+      "id": "2455ee3a8bbbfb447abb",
+      "source": "qiita",
+      "title": "【String型 vs StringBuilder】文字列結合における処理速度の違い",
+      "url": "https://qiita.com/tttol777/items/2455ee3a8bbbfb447abb",
+      "publishedAt": "2018-07-19T14:39:47.000Z",
+      "updatedAt": "2022-01-19T01:59:28.000Z",
+      "tags": [
+        "Java",
+        "string",
+        "StringBuilder"
+      ]
+    },
+    {
+      "id": "3161026c84dc427afc16",
+      "source": "qiita",
+      "title": "バッファ回路の必要性",
+      "url": "https://qiita.com/tttol777/items/3161026c84dc427afc16",
+      "publishedAt": "2018-07-16T03:26:30.000Z",
+      "updatedAt": "2024-04-11T22:15:42.000Z",
+      "tags": [
+        "基本情報処理技術者試験"
+      ]
+    },
+    {
+      "id": "753ed12c44be73e54bf0",
+      "source": "qiita",
+      "title": "【FE】DBのトランザクション処理",
+      "url": "https://qiita.com/tttol777/items/753ed12c44be73e54bf0",
+      "publishedAt": "2017-12-10T08:52:05.000Z",
+      "updatedAt": "2018-04-28T10:41:31.000Z",
+      "tags": [
+        "DB",
+        "基本情報処理技術者試験",
+        "勉強メモ",
+        "トランザクション"
+      ]
+    },
+    {
+      "id": "91cbc52276910cdfb3a3",
+      "source": "qiita",
+      "title": "gitでコミットを取り消すコマンド",
+      "url": "https://qiita.com/tttol777/items/91cbc52276910cdfb3a3",
+      "publishedAt": "2017-11-10T04:41:44.000Z",
+      "updatedAt": "2018-08-23T09:48:49.000Z",
+      "tags": [
+        "Git",
+        "Bitbucket",
+        "備忘録"
+      ]
+    },
+    {
+      "id": "9e1357d4a27ba090335f",
+      "source": "qiita",
+      "title": "bitbucket公開鍵認証でパスフレーズの入力を省略する",
+      "url": "https://qiita.com/tttol777/items/9e1357d4a27ba090335f",
+      "publishedAt": "2017-11-06T07:15:43.000Z",
+      "updatedAt": "2017-11-07T03:53:14.000Z",
+      "tags": [
+        "Git",
+        "Bitbucket",
+        "ssh公開鍵認証"
+      ]
     }
   ]
 }
