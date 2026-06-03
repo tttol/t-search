@@ -15,8 +15,8 @@
     {
       "id": "zenn",
       "label": "Zenn",
-      "enabled": false,
-      "itemCount": 0
+      "enabled": true,
+      "itemCount": 7
     }
   ]
 }
