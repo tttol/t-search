@@ -9,8 +9,8 @@
     {
       "id": "qiita",
       "label": "Qiita",
-      "enabled": false,
-      "itemCount": 0
+      "enabled": true,
+      "itemCount": 110
     },
     {
       "id": "zenn",
