@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "id": "https://blog.about-tttol.link/blog/car/",
+      "source": "blog",
+      "title": "車を買った",
+      "url": "https://blog.about-tttol.link/blog/car/",
+      "publishedAt": "2026-08-21T06:46:00.000Z",
+      "updatedAt": "2026-08-21T06:46:00.000Z",
+      "tags": []
+    },
+    {
       "id": "https://zenn.dev/tttol/articles/4ee7406b7dcaa7",
       "source": "zenn",
       "title": "ECS上のSpringBootアプリで無停止リリースを実現する",
