@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "id": "https://zenn.dev/tttol/articles/3cb1b993c21b23",
+      "source": "zenn",
+      "title": "「第二火曜日」みたいな定期実行ルールの作り方",
+      "url": "https://zenn.dev/tttol/articles/3cb1b993c21b23",
+      "publishedAt": "2026-09-14T21:36:31.000Z",
+      "updatedAt": "2026-09-14T21:36:31.000Z",
+      "tags": []
+    },
+    {
       "id": "https://blog.about-tttol.link/blog/car/",
       "source": "blog",
       "title": "車を買った",
