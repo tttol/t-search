@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "id": "https://blog.about-tttol.link/blog/agentsmd/",
+      "source": "blog",
+      "title": "AGENTS.mdに何書いてる？",
+      "url": "https://blog.about-tttol.link/blog/agentsmd/",
+      "publishedAt": "2026-09-20T16:35:00.000Z",
+      "updatedAt": "2026-09-20T16:35:00.000Z",
+      "tags": []
+    },
+    {
       "id": "https://zenn.dev/tttol/articles/3cb1b993c21b23",
       "source": "zenn",
       "title": "「第二火曜日」みたいな定期実行ルールの作り方",
